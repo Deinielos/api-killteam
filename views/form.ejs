@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        label,
+        p {
+            display: block;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+    </style>
+    <script src="js.js" defer></script>
+</head>
+
+<body>
+    <h1>Menu De Partida</h1>
+    <form class="newGame" action="/profile" method="POST">
+        <label>Jugador1:</label><input type="text" name="player1">
+        <label>Faccion:</label>
+        <select name="faction1">
+            <option value="Greenskin">Greenskin</option>
+            <option value="Hunter Cadres">Hunter Cadres</option>
+            <option value="Pathfinders">Pathfinders</option>
+            <option value="Tomb World">Tomb World</option>
+            <option value="Space Marines">Space Marines</option>
+            <option value="Veteran Guard">Veteran Guard</option>
+            <option value="Warp Coven">Warp Coven</option>
+            <option value="Corsairs Voidscarred">Corsairs Voidscarred</option>
+            <option value="Hive Fleets">Hive Fleets</option>
+            <option value="Cadre Mercenary">Cadre Mercenary</option>
+            <option value="Commorrites">Commorrites</option>
+            <option value="Traitor Space Marines">Traitor Space Marines</option>
+            <option value="Grey Knight">Grey Knight</option>
+            <option value="Imperial Guard">Imperial Guard</option>
+            <option value="Ecclesiarchy">Ecclesiarchy</option>
+            <option value="Talons of the Emperor">Talons of the Emperor</option>
+            <option value="Novitiate">Novitiate</option>
+            <option value="Kommandos">Kommandos</option>
+            <option value="Death Guard">Death Guard</option>
+            <option value="Chaos Demons">Chaos Demons</option>
+            <option value="Craftworlds">Craftworlds</option>
+            <option value="Legionaries">Legionaries</option>
+            <option value="Brood Covens">Brood Covens</option>
+            <option value="Troupes">Troupes</option>
+        </select>
+        <label>Atacante:</label><input type="text" name="attacker">
+        <label>Iniciativa:</label><input type="text" name="iniciative">
+        <label>Mision:</label>
+        <select name="mission" id="mission">
+            <option value="Loot And Savage">Seek And Destroy</option>
+            <option value="Consecration">Consecration</option>
+            <option value="Awaken The Data-Spirits">Awaken The Data-Spirits</option>
+            <option value="Escalating Hostilities">Escalating Hostilities</option>
+            <option value="Seize Ground">Seize Ground</option>
+            <option value="Domination">Domination</option>
+            <option value="Secure Archeotech">Secure Archeotech</option>
+            <option value="Duel Of Wits">Duel Of Wits</option>
+            <option value="Master The Terminals">Master The Terminals</option>
+        </select>
+        <label>Paquete:</label>
+        <select name="package1" id="package1">
+            <option value="Seek And Destroy">Seek And Destroy</option>
+            <option value="Security">Security</option>
+            <option value="Infiltration">Infiltration</option>
+            <option value="Recon">Recon</option>
+        </select>
+        <label>TacOps:</label>
+        <select name="tacOps1" id="tacOps1" class="tacOps1">
+            <option value="vacio">Selecciona Paquete</option>
+        </select>
+        <label>TacOps:</label>
+        <select name="tacOps2" id="tacOps2" class="tacOps1">
+            <option value="vacio">Selecciona Paquete</option>
+        </select>
+        <label>TacOps:</label>
+        <select name="tacOps3" id="tacOps3" class="tacOps1">
+            <option value="vacio">Selecciona Paquete</option>
+        </select>
+        <label>Puntos:</label><input type="text" name="result1">
+        <label>Jugador2:</label><input type="text" name="player2">
+        <label>Faccion:</label>
+        <select name="faction2">
+            <option value="Greenskin">Greenskin</option>
+            <option value="Hunter Cadres">Hunter Cadres</option>
+            <option value="Pathfinders">Pathfinders</option>
+            <option value="Necrons">Necrons</option>
+            <option value="Space Marines">Space Marines</option>
+            <option value="Veteran Guard">Veteran Guard</option>
+            <option value="Warp Coven">Warp Coven</option>
+            <option value="Corsairs Voidscarred">Corsairs Voidscarred</option>
+            <option value="Hive Fleets">Hive Fleets</option>
+            <option value="Cadre Mercenary">Cadre Mercenary</option>
+            <option value="Commorrites">Commorites</option>
+            <option value="Traitor Space Marines">Traitor Space Marines</option>
+            <option value="Grey Knight">Grey Knight</option>
+            <option value="Imperial Guard">Asuryani</option>
+            <option value="Ecclesiarchy">Ecclesiarchy</option>
+            <option value="Talons of the Emperor">Talons of the Emperor</option>
+            <option value="Novitiate">Novitiate</option>
+            <option value="Kommandos">Kommandos</option>
+            <option value="Death Guard">Death Guard</option>
+            <option value="Chaos Demons">Chaos Demons</option>
+            <option value="Craftworlds">Craftworlds</option>
+            <option value="Legionaries">Legionaries</option>
+            <option value="Brood Covens">Brood Covens</option>
+            <option value="Troupes">Troupes</option>
+        </select>
+        <label>Paquete:</label>
+        <select name="package2" id="package2">
+            <option value="Seek And Destroy">Seek And Destroy</option>
+            <option value="Security">Security</option>
+            <option value="Infiltration">Infiltration</option>
+            <option value="Recon">Recon</option>
+        </select>
+        <label>TacOps:</label>
+        <select name="tacOps4" id="tacOps4" class="tacOps2">
+            <option value="vacio">Selecciona Paquete</option>
+        </select>
+        <label>TacOps:</label>
+        <select name="tacOps5" id="tacOps5" class="tacOps2">
+            <option value="vacio">Selecciona Paquete</option>
+        </select>
+        <label>TacOps:</label>
+        <select name="tacOps6" id="tacOps6" class="tacOps2">
+            <option value="vacio">Selecciona Paquete</option>
+        </select>
+        <label>Puntos:</label><input type="text" name="result2">
+        <label>Turnos:</label><input type="text" name="turns">
+        <label>Torneo:</label><input type="text" name="tournament">
+        <input type="submit" value="Añadir" id="crearPartida">
+    </form>
+    </main>
+</body>
+
+</html>
