@@ -29,6 +29,6 @@ app.get('/newGame', (req, res) => {
 
 app.post('/profile', usersController.addGame)
 
-app.listen(8904, () => {
+app.listen(8080, () => {
     console.log('Funciona')
 })
